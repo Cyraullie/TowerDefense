@@ -7,7 +7,6 @@ public class CharacBehavor : MonoBehaviour
     private Rigidbody2D rb;
     public float vitesse;
     public float maxJump;
-    public Click click;
     Animator animator;
 
     // Start is called before the first frame update
@@ -26,7 +25,7 @@ public class CharacBehavor : MonoBehaviour
     {
         if (Input.GetKeyDown("space")) //Go Up
         {
-            click.AttackSword();
+            AttackSword();
         }
 
         if (Input.GetKey("w")) //Go Up
@@ -77,7 +76,7 @@ public class CharacBehavor : MonoBehaviour
             //float Z = 140;
             rb.velocity = new Vector2(0, 0);
             //click.gameObject.SetActive(false);
-            click.StopAttack();
+            StopAttack();
         }
 
         

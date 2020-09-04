@@ -26,7 +26,7 @@ public class Click : MonoBehaviour
     public void AttackSword()
     {
         //this.gameObject.SetActive(true);
-        animator.SetBool("attack", true);
+        animator.SetBool("idle", true);
 
         new WaitForSeconds(5);
         //animator.SetBool("attack", false);
@@ -34,7 +34,7 @@ public class Click : MonoBehaviour
 
     public void StopAttack()
     {
-        animator.SetBool("attack", false);
+        animator.SetBool("idle", false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
