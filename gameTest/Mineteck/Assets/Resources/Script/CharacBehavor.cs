@@ -7,7 +7,7 @@ public class CharacBehavor : MonoBehaviour
     private Rigidbody2D rb;
     public float vitesse;
     public float maxJump;
-    Animator animator;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -121,21 +121,16 @@ public class CharacBehavor : MonoBehaviour
     public void AttackSword()
     {
         //this.gameObject.SetActive(true);
-        animator.SetBool("attack", true);
+        animator.SetBool("IsAttack", true);
 
-        new WaitForSeconds(5);
-        //animator.SetBool("attack", false);
     }
 
     public void StopAttack()
     {
-        animator.SetBool("attack", false);
+        animator.SetBool("IsAttack", false);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("Trigger");
-    }  
+
     
     
     

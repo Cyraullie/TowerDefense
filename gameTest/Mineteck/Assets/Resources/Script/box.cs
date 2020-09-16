@@ -5,7 +5,8 @@ using UnityEngine;
 public class box : MonoBehaviour
 {
     public int life;
-    public Click click;
+    public SpriteRenderer spriteRenderer;
+    public BoxCollider2D boxCollider2;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +21,19 @@ public class box : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trigger");
+        Debug.Log(life);
+        life--;
+
+        if(life == 0)
+        {
+            spriteRenderer.enabled = false;
+            boxCollider2.enabled = false;
+        }
+
+
+
+        
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("Collision");
-    }
 
 }
