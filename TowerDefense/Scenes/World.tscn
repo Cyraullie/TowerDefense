@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Background/index.jpg" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 4.02482, 4.02482 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+margin_right = 260.0
+margin_bottom = 194.0
+texture = ExtResource( 1 )
