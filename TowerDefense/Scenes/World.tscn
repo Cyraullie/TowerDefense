@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Sprites/Background/index.jpg" type="Texture" id=1]
-[ext_resource path="res://Scenes/Gobelin.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Shaman.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Skeleton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/entity/Gobelin.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/entity/Shaman.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/entity/Skeleton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/entity/Turret.tscn" type="PackedScene" id=5]
 
 [node name="Node2D" type="Node2D"]
 
@@ -27,4 +28,7 @@ visible = false
 visible = false
 
 [node name="Skeleton" parent="." instance=ExtResource( 4 )]
+visible = false
+
+[node name="Turret" parent="." instance=ExtResource( 5 )]
 visible = false
