@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class click : MonoBehaviour
+public class ennemy : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
