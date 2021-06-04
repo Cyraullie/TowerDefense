@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class click : MonoBehaviour
+public class ennemy : MonoBehaviour
 {
+    int life;
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {

@@ -2,3 +2,5 @@
 src/TowerDefense/ProjectSettings/XRSettings.asset
 
 src/TowerDefense/ProjectSettings/Physics2DSettings.asset
+
+*.meta
